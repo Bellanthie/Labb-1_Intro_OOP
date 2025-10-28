@@ -14,19 +14,28 @@
             Radius = radius;// the name radius is for the computer to know. "r" is for the user to know so to speak
 
         }
-
-        public 
-
-
+        public double CalculateArea() // Creating a method where I want the program to calculate the radius
+        {
+            return Math.PI * Radius * Radius;
+        }
     }
 
-
-
+    // The main program below that uses the Circle class
+    // the MAIN program is the CENTER STAGE where all things happen. 
+    // therefore, this is where we 'call upon' the method "CalculateArea()"
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            // One of the circles from the assigment wants us to use a 5 and the other wants us to use 6
+            Circle circle1 = new Circle(5);
+            Console.WriteLine($"Arean av cirkel 1: {circle1.CalculateArea()}");
+
+            // Calculating second circle using 6
+            Circle circle2 = new Circle(6);
+            Console.WriteLine($"Arean av cirkel 2: {circle2.CalculateArea()}");
+
+
         }
  
 
