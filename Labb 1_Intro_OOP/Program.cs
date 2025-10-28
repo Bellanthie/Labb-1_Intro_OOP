@@ -1,6 +1,6 @@
 ﻿namespace Labb_1_Intro_OOP
 {
-
+    // Created a class called Circle
     class Circle
     {
         //comments here
